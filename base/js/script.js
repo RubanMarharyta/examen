@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded",
     
     window.onload=()=>{
        $ajaxUtils
-          .sendGetRequest(`https://exam-lunleo.herokuapp.com/data`, 
+          .sendGetRequest(`https://margowww.herokuapp.com/data`, 
             (request) => {
               const data = (JSON.parse(request.responseText))[0];
               console.log(data.title);

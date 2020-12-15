@@ -13,7 +13,7 @@ app.use(
 
 app.get('/data', db.getData);
 app.get('/data/:id', db.getDataById);
-app.use(express.static("base"));
+app.use(express.static("main"));
 
 
 app.listen(port, () => {
