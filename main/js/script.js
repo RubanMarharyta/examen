@@ -1,19 +1,18 @@
 document.addEventListener("DOMContentLoaded",
   (event) => {
       
-    const btn = document.getElementById("change");
+    const title = document.getElementById("title");
+    const photo = document.getElementById("photo");
+    const text = document.getElementById("text");
     
     window.onload=()=>{
        $ajaxUtils
           .sendGetRequest(`https://margowww.herokuapp.com/data/0`, 
             (request) => {
               const data = (JSON.parse(request.responseText))[0];
-              console.log(data.title);
-              console.log(data.photo);
-              console.log(data.text);  
               title.innerHTML=data.title;
-              photo.innerHTML=data.photo;
-              text.src=data.text;
+              photo.src=data.photo;
+              text.innerHTML=data.text;
               
             });
     }
