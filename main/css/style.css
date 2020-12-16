@@ -295,3 +295,26 @@ Extra (xl) large devices (large desktops, 1200px and up)
 footer>.text-center {
     display: flex;
 }
+
+.copyright {
+  text-shadow:
+    -1px -1px #000,
+    0 1px 0 #444;
+  color: #222;
+  transition: all 1s;
+}
+
+.copyright:hover {
+  text-shadow:
+    -1px -1px #000,
+    0 1px 0 #444;
+  color: #1A1A1A;
+}
+hr.style-five {
+    border: 0;
+    height: 0; /* Firefox... */
+    box-shadow: 0 0 10px 1px black;
+}
+hr.style-five:after {
+    content: "\00a0";
+}
